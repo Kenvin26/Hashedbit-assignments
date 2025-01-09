@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+        }
+
+        header .social-links a {
+            color: #fff;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+
+        nav {
+            background-color: #444;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            flex: 1;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .box {
+            width: 30%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+        }
+
+        .box .title {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        .box .description {
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="football.jpg" alt="logo" style="height: 50px;">
+        </div>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+            <p>football news</p>
+            <p>football players</p>
+        </div>
+        <div class="main-content">
+            <div class="box">
+                <div class="RONALDO">Box 1</div>
+                <img src="ronaldo.jpg" alt="Placeholder Image">
+                <div class="description">Cristiano Ronaldo is a Portuguese football legend known for his exceptional goal-scoring ability, athleticism, and dedication to the sport. He has played for top clubs like Manchester United, Real Madrid, Juventus, and Al-Nassr, winning numerous league titles and five Ballon d'Or awards. Ronaldo is celebrated for his leadership, versatility, and being one of the greatest players in football history.</div>
+            </div>
+            <div class="box">
+                <div class="title">Box 2</div>
+                <img src="messi.jpg" alt="Placeholder Image">
+                <div class="description">Lionel Messi, an Argentine maestro, is widely regarded as one of the greatest footballers of all time. Renowned for his dribbling, vision, and playmaking, Messi has won seven Ballon d'Or awards and multiple league titles with FC Barcelona, PSG, and Inter Miami. His crowning achievement was leading Argentina to victory in the 2022 FIFA World Cup, cementing his legacy.</div>
+            </div>
+            <div class="box">
+                <div class="title">Box 3</div>
+                <img src="bellingham.jpg" alt="Placeholder Image">
+                <div class="description">Jude Bellingham is a rising English football star admired for his versatility, composure, and tactical intelligence. Starting his career at Birmingham City, he moved to Borussia Dortmund and then Real Madrid, where he quickly became a key player. Known for his maturity and leadership beyond his years, Bellingham is considered one of the brightest young talents in football.</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>welcome to the website</p>
+    </footer>
+</body>
+</html>
